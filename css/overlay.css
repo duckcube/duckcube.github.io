@@ -4,7 +4,7 @@ html {
 .product-details-module__title {
   display: none !important;
 }
-@keyframes flicker {
+/* @keyframes flicker {
   0% {
     opacity: 0.17861;
   }
@@ -68,7 +68,7 @@ html {
   100% {
     opacity: 0.14387;
   }
-}
+} */ 
 .crt::after {
   content: " ";
   display: block;

@@ -1058,7 +1058,7 @@
   }
   
   .ec-minicart__body {
-    background: url(../img/Icons/CartIconSM.png) no-repeat;
+    background: url("../img/Icons/CartIconSM.png") no-repeat;
     height: 60px !important;
     width: 50px !important;
   }
