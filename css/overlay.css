@@ -1,0 +1,102 @@
+html {
+  background: black;
+}
+.product-details-module__title {
+  display: none !important;
+}
+@keyframes flicker {
+  0% {
+    opacity: 0.17861;
+  }
+  5% {
+    opacity: 0.24769;
+  }
+  10% {
+    opacity: 0.13604;
+  }
+  15% {
+    opacity: 0.30626;
+  }
+  20% {
+    opacity: 0.08128;
+  }
+  25% {
+    opacity: 0.13891;
+  }
+  30% {
+    opacity: 0.25583;
+  }
+  35% {
+    opacity: 0.21807;
+  }
+  40% {
+    opacity: 0.16559;
+  }
+  45% {
+    opacity: 0.24693;
+  }
+  50% {
+    opacity: 0.36019;
+  }
+  55% {
+    opacity: 0.04594;
+  }
+  60% {
+    opacity: 0.10313;
+  }
+  65% {
+    opacity: 0.31988;
+  }
+  70% {
+    opacity: 0.23455;
+  }
+  75% {
+    opacity: 0.17288;
+  }
+  80% {
+    opacity: 0.31428;
+  }
+  85% {
+    opacity: 0.30419;
+  }
+  90% {
+    opacity: 0.3003;
+  }
+  95% {
+    opacity: 0.16108;
+  }
+  100% {
+    opacity: 0.14387;
+  }
+}
+.crt::after {
+  content: " ";
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: rgba(18, 16, 16, 0.1);
+  opacity: 0;
+  z-index: 10;
+  pointer-events: none;
+  animation: flicker 0.15s infinite;
+}
+.crt::before {
+  content: " ";
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.25) 50%), linear-gradient(90deg, rgba(255, 0, 0, 0.06), rgba(0, 255, 0, 0.02), rgba(0, 0, 255, 0.06));
+  z-index: 10;
+  background-size: 100% 2px, 3px 100%;
+  pointer-events: none;
+}
+.crt {
+  animation: textShadow 1.6s infinite;
+  z-index: 10;
+}
