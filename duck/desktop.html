@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html amp class="crt">
+<head>
+	<title>Duck Cube - Desktop</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Duck Cube - Desktop">
+<meta name="keywords" content="Windows, Windows 98, Retro, Desktop, CRT, Duck Cube">
+<script type="text/javascript" src="scripts/jquery/jquery-3.4.1.min.js"></script>
+<script type="text/javascript" src="scripts/jquery/jquery.dropdown.js"></script>
+
+<script src="https://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+
+
+<!-- Facebook Pixel Code -->
+<!-- <script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '289630085616347');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=289630085616347&ev=PageView&noscript=1"
+/></noscript> -->
+<!-- End Facebook Pixel Code -->
+
+
+</head>
+<link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css' integrity='sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ' crossorigin='anonymous'>
+
+
+<link rel="stylesheet" type="text/css" media="screen and (min-width: 1000px)" href="css/main.css">
+<link rel="stylesheet" type="text/css" media="screen and (min-width: 750px) and (max-width: 999px)" href="css/main2.css">
+<link rel="stylesheet" type="text/css" media="screen and (min-width: 550px) and (max-width: 749px)" href="css/mainmobile.css">
+<link rel="stylesheet" type="text/css" media="screen and (max-width: 549px)" href="css/mainmobile2.css">
+<link rel="stylesheet" type="text/css" href="css/overlay.css">
+
+
+
+<script>
+/* Open when someone clicks on the span element */
+function openNav() {
+  document.getElementById("myNav").style.width = "250px";
+}
+
+/* Close when someone clicks on the "x" symbol inside the overlay */
+function closeNav() {
+  document.getElementById("myNav").style.width = "0%";
+}
+</script>
+
+
+<!-- Delay page load -->
+<script type="text/javascript">
+	function delay (URL) {
+    setTimeout( function() { window.location = URL }, 550 );
+	}
+</script>
+
+<!-- Shutdown animation -->
+<script type="text/javascript">
+	$(document).ready(function(){ 
+        $("#Shutdown").click(function(){ //On click function
+            $(".turnon-anim").addClass("turnoff-anim");  //Adds class which plays shutdown animation
+        });
+
+
+        $('.turnon-anim').on("animationend webkitAnimationEnd oAnimationEnd MSAnimationEnd", function(){
+             $(this).removeClass("turnoff-anim"); //Removes class playing shutdown animation once played
+        });
+    });
+</script>
+
+<!-- Shutdown animation -->
+<script type="text/javascript">
+	$(document).ready(function(){ 
+        $("#MobileShutdown").click(function(){ //On click function
+            $(".turnon-anim").addClass("turnoff-anim");  //Adds class which plays shutdown animation
+        });
+
+
+        $('.turnon-anim').on("animationend webkitAnimationEnd oAnimationEnd MSAnimationEnd", function(){
+             $(this).removeClass("turnoff-anim"); //Removes class playing shutdown animation once played
+        });
+    });
+</script>
+
+<!-- Icon drag Jquery -->
+<script type="text/javascript">
+		  $(function() {
+    $( "#draggable" ).draggable({stack: 'div'});
+
+  });
+		  $(function() {
+    $( "#draggable2" ).draggable({stack: 'div'});
+
+  });
+		  $(function() {
+    $( "#draggable3" ).draggable({stack: 'div'});
+
+  });
+		  $(function() {
+    $( "#draggable4" ).draggable({stack: 'div'});
+
+  });
+		  $(function() {
+    $( "#draggable5" ).draggable({stack: 'div'});
+
+  });
+	</script>
+
+<!-- Window drag Jquery -->
+<script type="text/javascript">
+		  $(function() {
+    $( "#shop-window" ).draggable({stack: 'div'});
+
+  });
+		  $(function() {
+    $( "#contact-window" ).draggable({stack: 'div'});
+
+  });
+		  $(function() {
+    $( "#terms-window" ).draggable({stack: 'div'});
+
+  });
+		  $(function() {
+    $( "#blackjack-window" ).draggable({stack: 'div'});
+
+  });
+</script>
+
+
+<script> //Fade In Shop 
+ 
+$(document).ready(function(){
+$(".fadeToggle").click(function(){
+$(".shop-border").fadeIn(1000);
+});
+ 
+}); 
+</script>
+
+<script> //Close Shop
+ 
+$(document).ready(function(){
+$(".minimise, .close").click(function(){
+$(".shop-border").fadeOut(1000);
+
+});
+ 
+}); 
+</script>
+
+<script> //Fade in Contact Page
+ 
+$(document).ready(function(){
+$(".fadeToggle2").click(function(){
+$(".contact-border").fadeIn(1000);
+});
+ 
+}); 
+</script>
+
+<script> //Close Contact Page
+ 
+$(document).ready(function(){
+$(".minimise2, .close2").click(function(){
+$(".contact-border").fadeOut(1000);
+
+});
+ 
+}); 
+</script>
+
+<script> //Fade in Terms & Conditions
+ 
+$(document).ready(function(){
+$(".fadeToggle3").click(function(){
+$(".terms-border").fadeIn(1000);
+});
+ 
+}); 
+</script>
+
+<script> //Close Terms & Conditions
+ 
+$(document).ready(function(){
+$(".minimise3, .close3").click(function(){
+$(".terms-border").fadeOut(1000);
+
+});
+ 
+}); 
+</script>
+
+<script> //Fade in BlackJack
+ 
+$(document).ready(function(){
+$(".fadeToggle4").click(function(){
+$(".blackjack-border").fadeIn(1000);
+});
+ 
+}); 
+</script>
+
+<script> //Close BlackJack
+ 
+$(document).ready(function(){
+$(".minimise5, .close5").click(function(){
+$(".blackjack-border").fadeOut(1000);
+
+});
+ 
+}); 
+</script>
+
+<body>
+<div class="turnon-anim">
+
+<div class="phone-menu">
+	<div class="phone-header">
+		<div id="menubtn" onclick="openNav()"><i class='fas fa-bars'></i></div>
+		<div id="header-title"><a>Duck Cube</a></div>
+	</div>
+<div id="myNav" class="phone-sidebarcover">
+	<div class="phone-sidebar-border">
+	<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+	<ul class="phone-sidebar">
+	        <li class="fadeToggle"><img src="img/Icons/ShopIconSM.png" draggable="false"><a>Shop</a></li>
+	        <li class="fadeToggle2"><img src="img/Icons/ContactIconSM.png" draggable="false"><a>Contact</a></li>
+	        <li class="fadeToggle3"><img src="img/Icons/TermsIconSM.png" draggable="false"><a>Terms & Conditions</a></li>
+	        <li class="fadeToggle4"><img id="BlackjackIcon" src="img/Icons/BlackjackIconSM.png" draggable="false"><a id="BlackjackSM">BlackJack.exe</a></li>
+	        <li id="MobileShutdown" onclick="delay ('index.html')"><img src="img/Icons/ShutdownIconSM.png" draggable="false"><a>Shutdown</a></li>
+	    </ul>
+	</div>
+</div>
+</div>
+<!-- Icons -->
+<!---
+<div class="Icons">
+	
+<div class="Shop">  <!- Shop Icon 
+	<div id="draggable" class="ui-widget-content">
+		<div class="fadeToggle">
+			<img src="img/Icons/ShopIconSM.png" draggable="false"><div class="icon-title">Shop</div>
+		</div>
+	</div>
+</div>
+
+<div class="Contact"> <!-  Contact Icon 
+	<div id="draggable2" class="ui-widget-content">
+		<div class="fadeToggle2">
+			<img src="img/Icons/ContactIconSM.png" draggable="false"><div class="icon-title">Contact</div>
+		</div>
+	</div>
+</div>
+
+<div class="Cart"> <!- Cart Icon 
+<div id="draggable3" class="ui-widget-content">
+		<div class="fadeToggle"><div data-icon="BASKET"  data-show-buy-animation="VALUE" data-show-empty-cart="FALSE" draggable="FALSE" class="ec-cart-widget"></div>
+			<div><script data-cfasync="false" type="text/javascript" src="https://app.ecwid.com/script.js?34138353&data_platform=code&data_date=2020-08-01" charset="utf-8"></script>
+			<script type="text/javascript">Ecwid.init();</script>
+			</div><div class="icon-title" id="cart-title">Cart</div>
+		</div>
+</div>
+</div>
+
+<div class="Terms"> <!- Terms Icon
+	<div id="draggable4" class="ui-widget-content">
+		<div class="fadeToggle3">
+			<img src="img/Icons/TermsIconSM.png" draggable="false"><div class="icon-title">Terms</div>
+		</div>
+	</div>
+</div>
+
+<div class="BJBlackjack"> <!- Blackjack Icon
+	<div id="draggable5" class="ui-widget-content">
+		<div class="fadeToggle4">
+			<img src="img/Icons/BlackjackIconSM.png" draggable="false"><div class="icon-title">Blackjack</div>
+		</div>
+	</div>
+</div>
+
+</div>
+
+-->
+
+
+<!-- Windows -->
+<div  id="shop-window">
+<div class="shop-border"> 
+	<div class="shop-title">Shop
+  		<div class='buttons'>
+        	<button class="minimise">_</button>
+        	<button>&#9634;</button>
+        	<button class="close">&times;</button>
+        </div>
+    </div>
+<div class="shop-container">
+  	<div class="store-container">
+		<div id="my-store-34138353"></div>
+		<div>
+		<!-- <script data-cfasync="false" type="text/javascript" src="https://app.ecwid.com/script.js?34138353&data_platform=code&data_date=2020-08-01" charset="utf-8"></script><script type="text/javascript"> xProductBrowser("categoriesPerRow=3","views=grid(20,3) list(60) table(60)","categoryView=grid","searchView=list","id=my-store-34138353");</script> -->
+		</div>
+	</div>
+</div>
+<div class="shop-garzbo-tag"><div class="garzbo-tag">Duck Cube</div></div>
+</div>
+</div>
+
+<div id="contact-window">
+<div class="contact-border">
+	<div class="contact-title">Contact
+  		<div class='buttons'>
+        	<button class="minimise2">_</button>
+        	<button>&#9634;</button>
+        	<button class="close2">&times;</button>
+        </div>
+    </div>
+<div class="contact-container">
+  	<div class="contact-form">
+  		<form class="formbox" method="POST" name="contactform" action="css/send_form_email.php">
+			<fieldset>
+				<div class="form-titles"> Email Address: </div>
+				<input class="form-input" type="email" name="email" required="Email">
+			<br>
+				<div class="form-titles"> Name: </div>
+				<input class="form-input" type="text" name="name">
+			<br>
+				<div class="form-titles"> Subject: </div>
+				<input class="form-input" type="text" name="subject">
+			<br>
+				<div class="form-titles-message"> Message: </div>
+				<textarea class="message" name="message" rows="6" cols="30" maxlength="500"></textarea> 
+				<input class="button" type="submit" value="Send">
+			</fieldset>
+		</form> 
+	</div>
+</div>
+	<div class="shop-garzbo-tag"><div class="garzbo-tag">Duck Cube</div></div>
+</div>
+</div>
+
+<div id="terms-window">
+<div class="terms-border">
+	<div class="terms-title">Terms & Conditions
+  		<div class='buttons'>
+        	<button class="minimise3">_</button>
+        	<button>&#9634;</button>
+        	<button class="close3">&times;</button>
+        </div>
+    </div>
+<div class="terms-container">
+			<em>Stated below are the terms and conditions for Duck Cube's website. Please be aware that your use of our site and the purchase of our products bounds you to these terms.</em>
+			<br> 
+			<br> 
+			<b>RETURNS, CANCELLATIONS, REFUNDS AND EXCHANGES</b>
+			<br>
+			<ul>
+				<li>Duck Cube reserves the right to request photographic evidence regarding defected products before authorising return.</li>
+			<br>
+			    <li>Duck Cube reserves the right to refuse unauthorised returns.</li>
+			<br>
+			    <li>Duck Cube will not accept any worn items.</li>
+			</ul>
+			Upon inspection of your return we will process the exchange and you will be sent a confirmation email. We suggest you use a tracked postage method as Duck Cube's team will not be responsible for return packages being lost or damaged. We are not responsible for return shipping costs or duty fees. 
+			<br> 
+			<br>
+			Customers bear the risks that the product may endure damage once dispatched by Duck Cube's team. Once the product is dispatched by our trusted carrier we absolve ourselves of all responsibility towards loss or damage of your order.
+			<br>
+			<br>
+			<b>PRIVACY POLICY</b>
+			<br>
+			Under no circumstances will your personal information be shared or sold to third parties. Zuckerburg...
+</div>
+	<div class="shop-garzbo-tag"><div class="garzbo-tag">Duck Cube</div></div>
+</div>
+</div>
+
+<div id="blackjack-window">
+<div class="blackjack-border">
+	<div class="blackjack-title">BlackJack.exe
+  		<div class='buttons'>
+        	<button class="minimise5">_</button>
+        	<button>&#9634;</button>
+        	<button class="close5">&times;</button>
+        </div>
+    </div>
+<div class="blackjack-container">
+  	<div class="blackjack-game">
+		<h1 id='blackjack-header'>BlackJack</h1>
+			<p id='paragraph'>Press Start to begin</p>
+			<p id='counter'></p>
+			<p id='playerhand'></p>
+			<button id='newgame' onClick=restartGame()>Start</button>
+		<div>
+			<button id='hit' onClick=getNextCard()>Hit</button>
+			<button id='stay' onClick=restartGame()>Stay</button>
+		</div>
+	</div>
+</div>
+	<div class="shop-garzbo-tag"><div class="garzbo-tag">Duck Cube</div></div>
+</div>
+</div>
+
+	    
+<!-- Footer/Start Button & Toolbar -->
+<div id="toolbar">
+    <div class="toolbar-start-menu">
+    	<button class="start-button" data-jq-dropdown="#jq-dropdown-1">
+        	Duck Cube
+    	</button>
+  	</div>
+</div>
+<div class="start-menu-dropdown">
+	<div id="jq-dropdown-1" class="jq-dropdown jq-dropdown-tip jq-dropdown-relative">
+	<div class="sidebar"></div>
+	    <div class="headline"><b>Duck Cube ©</b>
+	</div>
+	    <ul class="jq-dropdown-menu">
+	        <!-- <li class="fadeToggle"><img src="img/Icons/ShopIconSM.png" draggable="false"><a>Shop</a></li>
+	        <li class="fadeToggle2"><img src="img/Icons/ContactIconSM.png" draggable="false"><a>Contact</a></li>
+	        <li class="fadeToggle3"><img src="img/Icons/TermsIconSM.png" draggable="false"><a>Terms & Conditions</a></li>
+	        <li class="fadeToggle4"><img id="BlackjackIcon" src="img/Icons/BlackjackIconSM.png" draggable="false"><a id="BlackjackSM">BlackJack.exe</a></li> -->
+	        <li id="Shutdown" onclick="delay ('index.html')"><img src="img/Icons/ShutdownIconSM.png" draggable="false"><a>Shutdown</a></li>
+	    </ul>
+	</div>
+</div>
+
+</div>
+
+<!-- Blackjack Script -->
+<script>
+let newgame = document.getElementById('newgame');
+let hit = document.getElementById('hit');
+let stay = document.getElementById('stay');
+let counter = document.getElementById('counter');
+let loadPlayerHand = document.getElementById('playerhand');
+
+
+let cardToValue = {
+ 'Ace': 1,
+ 'Two': 2,
+ 'Three': 3,
+ 'Four': 4,
+ 'Five': 5,
+ 'Six': 6,
+ 'Seven': 7,
+ 'Eight': 8,
+ 'Nine': 9,
+ 'Ten': 10,
+ 'Jack': 10,
+ 'Queen': 10,
+ 'King': 10
+};
+
+let suits = ['Clubs', 'Diamonds', 'Hearts', 'Spades'];
+let values = ['Ace', 'Two', 'Three', 'Four', 'Five', 'Six', 'Seven', 'Eight', 'Nine', 'Ten', 'Jack', 'Queen', 'King'];
+
+function createDeck() {
+  newgame.style.display = 'none';
+  paragraph.innerText = 'Do you hit or stay';
+  deck = [];
+  hit.style.display = 'block';
+  stay.style.display = 'block';
+
+  for(let suitId = 0; suitId < suits.length; suitId++) {
+    for(let valueId = 0; valueId < values.length; valueId++) {
+      let card = {
+        suit: suits[suitId],
+        value: values[valueId]
+      };
+      deck.push(card);
+    }
+  }
+  shuffle();
+  getNextCard();
+  getNextCard();
+  return deck;
+}
+
+function getNextCard() {
+  let currentCardValue = deck[deck.length - 1].value;
+  playerHand.push(deck[deck.length - 1].value + ' of ' + deck[deck.length - 1].suit);
+  cardCounter = cardCounter + cardToValue[currentCardValue];
+  deck.pop();
+  paragraph.style.color = 'white';
+  counter.style.color = 'white';
+  loadPlayerHand.style.color = 'white';
+
+  counter.innerText = 'The sum of your cards is: ' + cardCounter;
+  loadPlayerHand.innerText = 'Cards you have: ' + playerHand.join(', ');
+  if (cardCounter > 21) {
+    paragraph.innerText = 'YOU LOSE!';
+    counter.style.color = 'red';
+    playAgain();
+  } if (cardCounter === 21) {
+    paragraph.innerText = 'YOU WIN!';
+    counter.style.color = '#003cff';
+    playAgain();
+  }
+  return playerHand;
+}
+
+function restartGame() {
+  paragraph.innerText = '';
+  newgame.style.display = 'none';
+  counter.innerText = 'none';
+  loadPlayerHand.innerText = '';
+  cardCounter = 0;
+  deck = [];
+  playerHand = [];
+  createDeck();
+}
+
+
+function playAgain() {
+  hit.style.display = 'none';
+  stay.style.display = 'none';
+  paragraph.innerText = 'Click Start to play again'
+  newgame.style.display = '';
+  restartGame;
+}
+
+function shuffle() {
+  for(let i = deck.length - 1; i >= 0; i--) {
+    let randomIndex = Math.floor(Math.random() * (i + 1));
+    let itemAtIndex = deck[randomIndex];
+    deck[randomIndex] = deck[i];
+    deck[i] = itemAtIndex;
+  }
+  return deck;
+}
+
+</script>
+
+
+</body>
+
+
+</html>
