@@ -863,6 +863,7 @@
     height: 100%;
     width: 100%;
     background-image: url("https://cdnb.artstation.com/p/assets/images/images/004/661/885/original/daniel-lugo-background-china.gif?1485367948");
+    background-size: cover;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -1323,8 +1324,8 @@
       color: black !important;
      }
   
-     .ec-cart {
-     }
+     /* .ec-cart {
+     } */
   
      .ec-cart__products {
       font-size: 10px !important;
