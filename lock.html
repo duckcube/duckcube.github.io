@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html amp class="crt">
+<head>
+	<title>Duck - Enter</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Duck Cube, random stuff you might enjoy seeing">
+<meta name="keywords" content="Duck Cube, NFT, Tech, 95 Theme, hypebeast, duck, cube, duck cube, duckcube, Duckcube"> 
+<link rel="stylesheet" type="text/css" href="css/landing.css">
+<link rel="stylesheet" type="text/css" href="css/overlay.css">
+<script type="text/javascript" src="scripts/jquery/jquery-3.4.1.min.js"></script>
+
+<script id="mcjs">!function(c,h,i,m,p){m=c.createElement(h),p=c.getElementsByTagName(h)[0],m.async=1,m.src=i,p.parentNode.insertBefore(m,p)}(document,"script","");</script>
+
+<!-- Facebook Pixel Code -->
+<!-- <script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '_');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=_&ev=PageView&noscript=1"
+/></noscript> -->
+<!-- End Facebook Pixel Code -->
+
+</head>
+
+<script type="text/javascript">
+	function delay (URL) {
+    setTimeout( function() { window.location = URL }, 500 );
+	}
+</script>
+
+<script type="text/javascript">
+	$(document).ready(function(){
+        $("#click-enter").click(function(){
+            $(".turnon-anim").addClass("turnoff-anim");
+        });
+
+        $('.turnon-anim').on("animationend webkitAnimationEnd oAnimationEnd MSAnimationEnd", function(){
+             $(this).removeClass("turnoff-anim");
+        });
+    });
+</script>
+
+<body>
+<div class="turnon-anim">
+        <div id="click-enter" onclick="delay ('desktop.html')"></div>
+</div>
+</body>
+
+</html>

@@ -59,9 +59,9 @@
       margin: 0px;
       padding: 0px;
       font-family: "VCROSDMono" !important;
-    touch-action: none;
-    z-index: 1;
-    background-color: black;
+      touch-action: none;
+      z-index: 1;
+      background-color: black;
   }
   .turnon-anim {
     position: fixed;
